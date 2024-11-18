@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Etiquetas - Correios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Etiquetas - Correios</h1>
+        <form id="form">
+            <label for="faixa-inicial">Faixa Inicial:</label>
+            <input type="text" id="faixa-inicial" placeholder="Ex: QR22045311BR" required>
+
+            <label for="faixa-final">Faixa Final:</label>
+            <input type="text" id="faixa-final" placeholder="Ex: QR22050295BR" required>
+
+            <button type="button" id="calcular">Calcular</button>
+        </form>
+        <h2>Resultados</h2>
+        <p><strong>Faixa Inicial:</strong> <span id="faixa-inicial-display"></span></p>
+        <p><strong>Faixa Final:</strong> <span id="faixa-final-display"></span></p>
+        <p><strong>Total de Etiquetas:</strong> <span id="total-etiquetas">0</span></p>
+        <textarea id="resultados" rows="10" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
